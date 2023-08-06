@@ -1,0 +1,220 @@
+body{
+    font-family:"Trirong", "serif", "Inter" ;
+    font-size: 16px;
+}
+
+
+.main-heading{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.mh_line{
+    width: 190px;
+    border: 1px solid #C8C8C8;
+
+}
+
+
+.heading{
+    color: #007F61;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Metropolis";
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top:15px;
+
+}
+.box_1{
+    min-height: 100px;
+    width: 40vw;
+    border: solid 1px #007F61;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+}
+
+.box_1_inside{
+  display: flex;
+}
+
+.box_list{
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+}
+
+.box_2{
+    min-height: 50px;
+    width: 40vw;
+    border: solid 1px rgb(65, 60, 60);
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top:15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #F4FBF9;
+}
+
+.box_2_container{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.card_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.box_2_left_side{
+    text-align: start;
+}
+
+
+.box_input_section{
+ margin-left: 20px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.custom_dropdown{
+    width: 90px;
+    padding: 5px;
+    margin:5px;
+    margin-top: 10px;
+    border-color: #D9D9D9;
+    background-color: #FFFFFF;
+}
+
+.label_margin{
+   margin-left: 25px;
+}
+
+.box_2_text{
+    font-family: Inter;
+font-size: 13px;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Metropolis;
+font-size: 13px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.offer-text{
+    text-align: center;
+    font-size: 12px;
+    color: #9F9F9F;
+    text-decoration: line-through;
+}
+
+.label_section{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.radio-btn{
+    margin-top: 15px;
+}
+
+.total_bill_section{
+    display: flex;
+    justify-content: space-between;
+    width: 42vw;
+    margin: 25px 0px 25px 0px;
+}
+
+.total_bill_section_text{
+   color: #007F61;
+}
+
+.btn-success{
+   background: #007F61;
+   color: #FFFFFF;
+   width: 42vw;
+   padding: 15px;
+   font-family: Inter;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.card_right_text{
+    color:  #007F61;
+    font-weight: 500;
+}
+
+.total_bill_bottom_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.powered_by_text{
+   text-align: right;
+   width: 42%;
+   line-height: 50px;
+}
+
+.icon{
+    margin-top: 25px;
+}
+
+
+.card_text_right{
+    color: #007F61;
+    font-size: 17px;
+}
+
+.card_text{
+    font-size: 17px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+
+input[type='radio'] {
+    accent-color:#007F61 ;
+}
+
+
