@@ -10,17 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 cards.forEach(data => {
                     const cInputRadio = data.querySelector('input[type="radio"]');
                     cInputRadio.checked = false;
-                    c.classList.remove('active');
-                     // Remove 'active' class from all cards
+                    data.classList.remove('active');
+                     //It Removes 'active' class from all cards
                 });
                 inputRadio.checked = true;
                 cards.forEach(c => c.querySelector('.select_options_section').style.display = 'none');
                 selectOptionsSection.style.display = 'block';
                 card.classList.add('active'); 
-                // Add 'active' class to the selected card
+                //It is for Adding the 'active' class to the selected card
             } else {
                 selectOptionsSection.style.display = 'none';
-                card.classList.remove('active'); // Remove 'active' class if radio is unchecked
+                card.classList.remove('active');
+                 //It Remove 'active' class if radio is unchecked
             }
         });
     });
