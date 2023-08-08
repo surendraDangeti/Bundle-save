@@ -1,14 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
 }
 
 .page_container {
+    flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
     background: #FFFFFF;
     padding: 15px;
-    height: 748px;
+    max-height: 748px;
     top: -474px;
     left: -190px;
 
@@ -27,26 +45,52 @@ body {
     justify-content: center;
 }
 
-.main_heading{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.mh_line{
-    width: 100px;
-    border: 1px solid #C8C8C8;
-
-}
-
 .heading{
     color: #007F61;
     font-size: 18px;
-    font-weight: 600;
-    font-family: "Metropolis";
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+.left_line{ 
+width: 93.99px;
+top: -308.96px;
+left: -40px;
+border: 0.90px;
+ /* angle : -0 deg; */
+ background-color: red;
+    
+}
+
+.heading_container{
+    width: 340.73px;
+    height: 18px;
+    top: -318px;
+    left: -40px;
+    border: 0.90px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.line {
+    width: 93.9px;
+    top: -308.96px;
+    left: -40px;
+    border: 0.90px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #C8C8C8;
+
+
+    
+  }
+
 
 .card {
     width: 340.73px;
@@ -98,19 +142,13 @@ text-align: left;
 }
 
 .discount {
-    font-family: Inter;
-font-size: 13px;
-font-weight: 500;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-
-font-family: Metropolis;
-font-size: 13px;
-font-weight: 400;
-line-height: 13px;
-letter-spacing: 0em;
-text-align: left;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    
 }
 
 .label_section{
@@ -157,9 +195,9 @@ margin-bottom: 4px;
 
 .ss_text{
     color:#007F61;
-    Font:"Inter";
-    font-Weight:500;
-    Size:14px;
+    font-family:"Inter";
+    font-weight:500;
+    font-size:14px;
     line-height:16.94px;
 }
 
@@ -169,7 +207,7 @@ font-weight: 400;
 line-height: 17px;
 letter-spacing: 0em;
 text-align: left;
-font-family: Inter;
+font-family: "Inter";
 font-size: 14px;
 font-weight: 500;
 line-height: 17px;
@@ -178,12 +216,22 @@ text-align: left;
 font-weight: 500;
 }
 
-.price_text{
-    font-family: monospace;
-    color: #000000;
-    font-weight:500;
+.card_Top_text_light{
+    font-family: "Inter";
     size:14.46px;
-    line-height:17.5px;
+    line-height: 17.5px; 
+    color: #000000;  
+}
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+
+.fw-600{
+    font-weight: 600;
 }
 
 .add_cart_button{
@@ -191,10 +239,15 @@ font-weight: 500;
     height: 48px;
     Top:130px;
     Left:-41px;
-    border-radius:4px, 4px, 4px, 0px;
     background: #007F61;
     color: #FFFFFF;
-
+    box-shadow: none;
+    font-family:"Inter";
+    font-weight:"600";
+    font-size: "16px";
+    line-height:19.36px;
+    border: none;
+    border-radius: 4px;
 }
 
 .offer-text{
@@ -212,8 +265,7 @@ font-weight: 500;
 }
 
 .price_text{
-    
- font-family: "Metropolis";
+ font-family: 'Metropolis', sans-serif;
  size:14.46px;
 line-height:14.46px;
 text-align: end;
@@ -223,12 +275,32 @@ width: 500;
 
 .popular_text{
     color: #007F61;
+    font-family: "Inter";
+    font-weight:600;
+    font-size:12.65px;
+    line-height: 15.31px
 
 }
 
-/* Your existing styles */
+.copy_rights_text{
+    font-family:"Inter";
+    font-size:300;
+    font-style:italic;
+    font-size:12px;
+    line-height: 14.52px;
+    margin-left: auto; 
+}
+.inputlabel{
+    font-family: Inter;
+font-size: 11px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
 
-/* Add media query for mobile screens */
+}
+
+/*media query for mobile screens */
 @media (max-width: 768px) {
     .card {
         width: 100%;
@@ -263,8 +335,23 @@ width: 500;
         margin-bottom: 10px;
     }
 
-    .add_cart_button {
+    /* .add_cart_button {
         width: 100%;
         margin-top: 10px;
+    } */
+    .copy_rights_text{
+        margin: 0px;
     }
+}
+
+@media (max-width: 360px){
+.card {
+    width:90%;
+}
+.line {
+    width: max-content;
+}
+.add_cart_button {
+ width: fit-content;
+} 
 }

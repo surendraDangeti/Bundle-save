@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="" href="styles.css">
 </head>
 <body>
     <div class="page_container"> 
   
         <div class="main_container">
-            <div class="main_heading"><hr class="mh_line"/><div><div class="heading"> Bundle & Save</div> </div><hr class="mh_line"/></div>
+            <div class="heading_container">
+                <span class="line"></span>
+                <span class="heading">Bundle & Save</span>
+                <span class="line"></span>
+            </div>    
            
             <div class="card">
                 <div class="card_container">
                     <div class="card_details">
                         <input type="radio" />
                         <div class="card_text">
-                            <div>1 Pair</div>
-                            <div class="ss_price">Dkk 195.00</div>
+                            <div  class="card_Top_text fw-400">1 Pair</div>
+                            <div  class="card_Top_text fw-500">Dkk 195.00</div>
                         </div>
                     </div>
-                    <div class="discount">
+                    <div class=" discount fw-600">
                       50% OFF
                     </div>
                 </div>
                 <div class="select_options_section" style="display:none">
                     <div class="label_section">
-                    <div>Size</div>
-                     <div>Color</div>
+                    <div class="inputlabel">Size</div>
+                     <div class="inputlabel">Color</div>
                    </div>
                     <div>
                         <label >#1</label>
@@ -57,8 +65,8 @@
                     <div class="card_details">
                         <input type="radio" />
                         <div class="card_text">
-                            <div>2 Pair</div>
-                            <div class="price_text">Dkk 435.00</div>
+                            <div class="card_Top_text fw-400">2 Pair</div>
+                            <div  class="card_Top_text fw-500">Dkk 435.00</div>
                         </div>
                     </div>
                     <div class="offer-text">
@@ -66,13 +74,13 @@
                         </div>
                     <div class="discount">
                         <div class="popular_text">Most Popular</div>
-                        <div class="text-end">40% OFF</div>
+                        <div class="text-end fw-600">40% OFF</div>
                     </div>
                 </div>
                 <div class="select_options_section" style="display:none">
                     <div class="label_section">
-                    <div>Size</div>
-                     <div>Color</div>
+                    <div class="inputlabel">Size</div>
+                     <div class="inputlabel">Color</div>
                    </div>
                     <div>
                         <label>#1</label>
@@ -101,18 +109,18 @@
                     <div class="card_details">
                         <input type="radio" id="rvc"/>
                         <div class="card_text" >
-                            <div>3 Pair</div>
-                            <div class="price_text">Dkk 528.00</div>
+                            <div class="card_Top_text fw-400">3 Pair</div>
+                            <div class="card_Top_text fw-500">Dkk 528.00</div>
                         </div>
                     </div>
-                    <div class="discount">
+                    <div class="discount fw-600">
                         60% OFF
                     </div>
                 </div>
                 <div class="select_options_section" style="display:none">
                     <div class="label_section">
-                    <div>Size</div>
-                     <div>Color</div>
+                    <div class="inputlabel">Size</div>
+                     <div class="inputlabel">Color</div>
                    </div>
                     <div>
                         <label>#1</label>
@@ -139,8 +147,8 @@
 
              <!-- total price section -->
             <div class="shipping_section">
-                <div class="ss_text">Free 2 Days shipping</div>
-                <div>Total: <span class="ss_price">DK 360.00</span></div>
+                <div class="ss_text fw-600">Free 2 Days shipping</div>
+                <div class="ss_price fw-600">Total: DKK 360.00</div>
             </div>
             <!-- button -->
             <div>
@@ -148,7 +156,9 @@
                 + Add to Cart
             </button>    
         </div>
-        </div>
+        
+        <p class="copy_rights_text">&copy Powered by pumper</p>
+    </div>
     </div>
     <script src="assignment.js"></script>
 </body>
