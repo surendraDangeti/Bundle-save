@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentPrice = "528.00"
                  }
 
-                document.getElementById("totalprice").innerHTML = `$Total: DKK${currentPrice}`
+                document.getElementById("totalprice").innerHTML = `Total: DKK${currentPrice}`
 
             } else {
                 selectOptionsSection.style.display = 'none';
