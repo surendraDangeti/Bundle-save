@@ -166,7 +166,7 @@ input[type='radio'] {
     top: -9.80322265625px;
     left: -40px;
     border-radius: 3.6152124404907227px;
-    
+    cursor: pointer;
 
 }
 
@@ -248,6 +248,7 @@ font-weight: 500;
     line-height:19.36px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .offer-text{
@@ -335,10 +336,6 @@ text-align: left;
         margin-bottom: 10px;
     }
 
-    /* .add_cart_button {
-        width: 100%;
-        margin-top: 10px;
-    } */
     .copy_rights_text{
         margin: 0px;
     }
